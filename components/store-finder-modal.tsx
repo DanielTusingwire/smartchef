@@ -90,7 +90,7 @@ export function StoreFinderModal({ isOpen, onClose }: StoreFinderModalProps) {
             exit={isDesktop ? { opacity: 0, scale: 0.95 } : { y: "100%" }}
             transition={{ type: "spring", damping: 25, stiffness: 300 }}
             className={cn(
-              "fixed z-[101] bg-white shadow-2xl overflow-hidden flex flex-col",
+              "fixed z-[101] bg-white dark:bg-neutral-900 shadow-2xl overflow-hidden flex flex-col",
               isDesktop
                 ? "left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-md rounded-3xl max-h-[85vh]"
                 : "bottom-0 left-0 right-0 rounded-t-[2.5rem] max-h-[85vh]"
@@ -106,29 +106,29 @@ export function StoreFinderModal({ isOpen, onClose }: StoreFinderModalProps) {
           >
             {/* Mobile Drag Handle */}
             {!isDesktop && (
-              <div className="w-full flex justify-center pt-4 pb-2 bg-neutral-900">
-                <div className="w-12 h-1.5 bg-neutral-700 rounded-full" />
+              <div className="w-full flex justify-center pt-4 pb-2 bg-neutral-900 dark:bg-neutral-950">
+                <div className="w-12 h-1.5 bg-neutral-700 dark:bg-neutral-600 rounded-full" />
               </div>
             )}
 
             {/* Header */}
             <div
               className={cn(
-                "bg-white border-b border-neutral-100 sticky top-0 z-10",
+                "bg-white dark:bg-neutral-900 border-b border-neutral-100 dark:border-neutral-800 sticky top-0 z-10",
                 isDesktop ? "p-6" : "px-6 pb-6 pt-2"
               )}
             >
               <div className="flex items-center justify-between">
                 <div>
-                  <h2 className="text-2xl font-bold text-neutral-900">
+                  <h2 className="text-2xl font-bold text-neutral-900 dark:text-neutral-100">
                     Available stores
                   </h2>
                 </div>
                 <button
                   onClick={onClose}
-                  className="p-2 hover:bg-neutral-100 rounded-full transition-colors"
+                  className="p-2 hover:bg-neutral-100 dark:hover:bg-neutral-800 rounded-full transition-colors"
                 >
-                  <X className="w-6 h-6 text-neutral-500" />
+                  <X className="w-6 h-6 text-neutral-500 dark:text-neutral-400" />
                 </button>
               </div>
             </div>
@@ -138,23 +138,23 @@ export function StoreFinderModal({ isOpen, onClose }: StoreFinderModalProps) {
               {MOCK_STORES.map((store) => (
                 <div
                   key={store.id}
-                  className="flex items-center justify-between p-4 bg-white border border-neutral-100 rounded-2xl shadow-sm hover:shadow-md transition-all"
+                  className="flex items-center justify-between p-4 bg-white dark:bg-neutral-800 border border-neutral-100 dark:border-neutral-700 rounded-2xl shadow-sm hover:shadow-md transition-all"
                 >
                   <div className="space-y-1">
-                    <h3 className="font-bold text-neutral-900 text-lg">
+                    <h3 className="font-bold text-neutral-900 dark:text-neutral-100 text-lg">
                       {store.name}
                     </h3>
                     <div className="flex items-center gap-2 text-sm">
-                      <span className="text-neutral-500">{store.distance}</span>
-                      <span className="text-neutral-300">•</span>
-                      <span className="bg-pink-100 text-pink-600 px-2 py-0.5 rounded-md font-medium">
+                      <span className="text-neutral-500 dark:text-neutral-400">{store.distance}</span>
+                      <span className="text-neutral-300 dark:text-neutral-600">•</span>
+                      <span className="bg-pink-100 dark:bg-pink-900/30 text-pink-600 dark:text-pink-300 px-2 py-0.5 rounded-md font-medium">
                         {store.phone}
                       </span>
                     </div>
                   </div>
 
                   <button
-                    className="p-3 bg-neutral-100 hover:bg-neutral-200 rounded-full transition-colors text-neutral-900"
+                    className="p-3 bg-neutral-100 dark:bg-neutral-700 hover:bg-neutral-200 dark:hover:bg-neutral-600 rounded-full transition-colors text-neutral-900 dark:text-neutral-100"
                     onClick={() =>
                       window.open(
                         `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(store.name + " " + store.address)}`,

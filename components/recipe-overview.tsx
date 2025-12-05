@@ -11,6 +11,13 @@ interface RecipeOverviewProps {
     summary: string
     prep_time: string
     servings: string
+    difficulty?: string
+    cuisine?: string
+    meal_type?: string
+    dietary_tags?: string[]
+    active_time?: string
+    passive_time?: string
+    total_time?: string
     image?: string
     nutritional_info?: {
       calories: string
@@ -48,18 +55,18 @@ export function RecipeOverview({ recipe, onStartCooking, onBack }: RecipeOvervie
     : null
 
   // Determine which image to use: YouTube thumbnail or AI-generated
-  const imageUrl = recipe.youtube_thumbnail 
+  const imageUrl = recipe.youtube_thumbnail
     ? recipe.youtube_thumbnail
     : `https://pollinations.ai/p/${encodeURIComponent(recipe.image_keywords || recipe.recipe_name)}?width=1280&height=720&seed=42&model=flux`
 
   return (
-    <div className="min-h-screen bg-neutral-100">
-      <ScrollAwareHeader 
+    <div className="min-h-screen bg-neutral-100 dark:bg-neutral-950">
+      <ScrollAwareHeader
         maxWidth="max-w-4xl"
         rightContent={
-          <button 
+          <button
             onClick={onBack}
-            className="p-2 -mr-2 text-neutral-500 hover:text-neutral-900 hover:bg-neutral-100 rounded-full transition-colors"
+            className="p-2 -mr-2 text-neutral-500 hover:text-neutral-900 dark:hover:text-neutral-100 hover:bg-neutral-100 dark:hover:bg-neutral-800 rounded-full transition-colors"
           >
             <X className="w-6 h-6" />
           </button>
@@ -69,13 +76,13 @@ export function RecipeOverview({ recipe, onStartCooking, onBack }: RecipeOvervie
       {/* Main Content Container */}
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 pb-32 pt-24">
         {/* Hero Image */}
-        <div className="w-full aspect-video bg-neutral-100 rounded-3xl overflow-hidden mb-8 shadow-sm relative">
+        <div className="w-full aspect-video bg-neutral-100 dark:bg-neutral-900 rounded-3xl overflow-hidden mb-8 shadow-sm relative">
           {!imageLoaded && (
-            <div className="absolute inset-0 flex items-center justify-center bg-neutral-100 z-10">
-              <img 
-                src="/loadLogo.png" 
-                alt="Loading..." 
-                className="w-20 h-20 animate-spin object-contain" 
+            <div className="absolute inset-0 flex items-center justify-center bg-neutral-100 dark:bg-neutral-900 z-10">
+              <img
+                src="/loadLogo.png"
+                alt="Loading..."
+                className="w-20 h-20 animate-spin object-contain"
               />
             </div>
           )}
@@ -98,24 +105,45 @@ export function RecipeOverview({ recipe, onStartCooking, onBack }: RecipeOvervie
           </div>
         </div>
 
+
+
         {/* Description */}
         {/* Summary Card */}
-        <div className="bg-white rounded-3xl p-5 sm:p-6 mb-8">
+        <div className="bg-white dark:bg-neutral-900 rounded-3xl p-5 sm:p-6 mb-8">
           {/* Description */}
           <p className="text-base sm:text-lg text-muted-foreground leading-relaxed mb-8">{recipe.summary}</p>
 
           {/* Stats Cards */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-8">
-            <div className="bg-neutral-100 px-4 py-4 rounded-2xl">
-              <p className="text-sm text-muted-foreground mb-1">Cooking time</p>
-              <p className="font-semibold text-foreground text-lg">{recipe.prep_time}</p>
-            </div>
-            <div className="bg-neutral-100 px-4 py-4 rounded-2xl">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-8">
+            {/* Enhanced Time Display */}
+            {(recipe.active_time || recipe.total_time || recipe.prep_time) && (
+              <div className="bg-neutral-100 dark:bg-neutral-800 px-4 py-4 rounded-2xl">
+                <p className="text-sm text-muted-foreground mb-1">Time</p>
+                {recipe.active_time && recipe.passive_time ? (
+                  <div className="space-y-1">
+                    <p className="font-semibold text-foreground text-base">
+                      {recipe.total_time || recipe.prep_time}
+                    </p>
+                    <div className="flex gap-3 text-xs text-muted-foreground">
+                      <span title="Active cooking time">Active: {recipe.active_time}</span>
+                      {recipe.passive_time !== '0 mins' && recipe.passive_time !== '0' && (
+                        <span title="Passive waiting time">Passive: {recipe.passive_time}</span>
+                      )}
+                    </div>
+                  </div>
+                ) : (
+                  <p className="font-semibold text-foreground text-lg">
+                    {recipe.total_time || recipe.prep_time}
+                  </p>
+                )}
+              </div>
+            )}
+            <div className="bg-neutral-100 dark:bg-neutral-800 px-4 py-4 rounded-2xl">
               <p className="text-sm text-muted-foreground mb-1">Servings</p>
               <p className="font-semibold text-foreground text-lg">{currentServings}</p>
             </div>
             {adjustedCalories && (
-              <div className="bg-neutral-100 px-4 py-4 rounded-2xl">
+              <div className="bg-neutral-100 dark:bg-neutral-800 px-4 py-4 rounded-2xl">
                 <p className="text-sm text-muted-foreground mb-1">Calories</p>
                 <p className="font-semibold text-foreground text-lg">{adjustedCalories} kcal</p>
               </div>
@@ -126,14 +154,14 @@ export function RecipeOverview({ recipe, onStartCooking, onBack }: RecipeOvervie
           <div className="flex items-center justify-between pt-2">
             <button
               onClick={decreaseServings}
-              className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-neutral-100 hover:bg-neutral-200 flex items-center justify-center text-lg sm:text-xl font-semibold transition-colors"
+              className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-neutral-100 dark:bg-neutral-800 hover:bg-neutral-200 dark:hover:bg-neutral-700 flex items-center justify-center text-lg sm:text-xl font-semibold transition-colors"
             >
               −
             </button>
             <span className="text-lg font-semibold text-foreground">Cooking for {currentServings}</span>
             <button
               onClick={increaseServings}
-              className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-neutral-100 hover:bg-neutral-200 flex items-center justify-center text-lg sm:text-xl font-semibold transition-colors"
+              className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-neutral-100 dark:bg-neutral-800 hover:bg-neutral-200 dark:hover:bg-neutral-700 flex items-center justify-center text-lg sm:text-xl font-semibold transition-colors"
             >
               +
             </button>
@@ -145,7 +173,7 @@ export function RecipeOverview({ recipe, onStartCooking, onBack }: RecipeOvervie
         <div className="mb-8">
           <h2 className="text-2xl font-bold text-foreground mb-6 pl-2">Things to note</h2>
 
-          <div className="bg-white rounded-3xl p-5 sm:p-6">
+          <div className="bg-white dark:bg-neutral-900 rounded-3xl p-5 sm:p-6">
             {/* Tools */}
             {recipe.tools && recipe.tools.length > 0 && (
               <div className="mb-8">
@@ -154,7 +182,7 @@ export function RecipeOverview({ recipe, onStartCooking, onBack }: RecipeOvervie
                   {recipe.tools.map((tool) => (
                     <span
                       key={tool}
-                      className="px-4 py-2 bg-neutral-100 rounded-xl text-sm text-foreground font-medium"
+                      className="px-4 py-2 bg-neutral-100 dark:bg-neutral-800 rounded-xl text-sm text-foreground font-medium"
                     >
                       {tool}
                     </span>
@@ -184,6 +212,59 @@ export function RecipeOverview({ recipe, onStartCooking, onBack }: RecipeOvervie
             )}
           </div>
         </div>
+
+        {/* Recipe Details Section - Minimal Design */}
+        {(recipe.difficulty || recipe.cuisine || recipe.meal_type || (recipe.dietary_tags && recipe.dietary_tags.length > 0)) && (
+          <div className="mb-8">
+            <h2 className="text-2xl font-bold text-foreground mb-6 pl-2">Recipe details</h2>
+
+            <div className="bg-white dark:bg-neutral-900 rounded-3xl p-5 sm:p-6">
+              {/* Main Info Grid */}
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 mb-6">
+                {/* Difficulty */}
+                {recipe.difficulty && (
+                  <div className="space-y-1">
+                    <p className="text-xs text-neutral-500 dark:text-neutral-400 font-medium uppercase tracking-wide">Difficulty</p>
+                    <p className="text-sm font-semibold text-neutral-900 dark:text-neutral-100">{recipe.difficulty}</p>
+                  </div>
+                )}
+
+                {/* Cuisine */}
+                {recipe.cuisine && (
+                  <div className="space-y-1">
+                    <p className="text-xs text-neutral-500 dark:text-neutral-400 font-medium uppercase tracking-wide">Cuisine</p>
+                    <p className="text-sm font-semibold text-neutral-900 dark:text-neutral-100">{recipe.cuisine}</p>
+                  </div>
+                )}
+
+                {/* Meal Type */}
+                {recipe.meal_type && (
+                  <div className="space-y-1">
+                    <p className="text-xs text-neutral-500 dark:text-neutral-400 font-medium uppercase tracking-wide">Meal Type</p>
+                    <p className="text-sm font-semibold text-neutral-900 dark:text-neutral-100">{recipe.meal_type}</p>
+                  </div>
+                )}
+              </div>
+
+              {/* Dietary Tags */}
+              {recipe.dietary_tags && recipe.dietary_tags.length > 0 && (
+                <div className="pt-4 border-t border-neutral-200 dark:border-neutral-700">
+                  <p className="text-xs text-neutral-500 dark:text-neutral-400 font-medium uppercase tracking-wide mb-3">Dietary</p>
+                  <div className="flex flex-wrap gap-2">
+                    {recipe.dietary_tags.map((tag) => (
+                      <span
+                        key={tag}
+                        className="px-3 py-1.5 bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 rounded-lg text-xs font-medium border border-neutral-200 dark:border-neutral-700"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
+          </div>
+        )}
 
         {/* Start Cooking Button */}
         {/* Floating Start Cooking Button */}

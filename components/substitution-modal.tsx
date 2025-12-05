@@ -59,7 +59,7 @@ export function SubstitutionModal({
             exit={isDesktop ? { opacity: 0, scale: 0.95 } : { y: "100%" }}
             transition={{ type: "spring", damping: 25, stiffness: 300 }}
             className={cn(
-              "fixed z-[70] bg-white shadow-2xl overflow-hidden flex flex-col",
+              "fixed z-[70] bg-white dark:bg-neutral-900 shadow-2xl overflow-hidden flex flex-col",
               isDesktop
                 ? "left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-md rounded-3xl max-h-[85vh]"
                 : "bottom-0 left-0 right-0 rounded-t-[2.5rem] max-h-[85vh]"
@@ -75,30 +75,30 @@ export function SubstitutionModal({
           >
             {/* Mobile Drag Handle */}
             {!isDesktop && (
-              <div className="w-full flex justify-center pt-4 pb-2 bg-neutral-900">
-                <div className="w-12 h-1.5 bg-neutral-700 rounded-full" />
+              <div className="w-full flex justify-center pt-4 pb-2 bg-neutral-900 dark:bg-neutral-950">
+                <div className="w-12 h-1.5 bg-neutral-700 dark:bg-neutral-600 rounded-full" />
               </div>
             )}
 
             {/* Header */}
             <div
               className={cn(
-                "bg-neutral-900 text-white flex items-center justify-between shrink-0",
+                "bg-white dark:bg-neutral-900 border-b border-neutral-100 dark:border-neutral-800 flex items-center justify-between shrink-0",
                 isDesktop ? "p-6" : "px-6 pb-6 pt-2"
               )}
             >
               <div className="flex items-center gap-3">
-                <div className="p-2 bg-white/10 rounded-xl">
+                <div className="p-2 bg-neutral-100 dark:bg-neutral-800 rounded-xl text-neutral-900 dark:text-neutral-100">
                   <ChefHat className="w-6 h-6" />
                 </div>
                 <div>
-                  <h3 className="font-bold text-lg">Substitutions</h3>
-                  <p className="text-neutral-400 text-sm">For {ingredient}</p>
+                  <h3 className="font-bold text-lg text-neutral-900 dark:text-neutral-100">Substitutions</h3>
+                  <p className="text-neutral-500 dark:text-neutral-400 text-sm">For {ingredient}</p>
                 </div>
               </div>
               <button
                 onClick={onClose}
-                className="p-2 hover:bg-white/10 rounded-full transition-colors"
+                className="p-2 hover:bg-neutral-100 dark:hover:bg-neutral-800 rounded-full transition-colors text-neutral-500 dark:text-neutral-400"
               >
                 <X className="w-5 h-5" />
               </button>
@@ -108,8 +108,8 @@ export function SubstitutionModal({
             <div className="p-6 overflow-y-auto custom-scrollbar">
               {isLoading ? (
                 <div className="flex flex-col items-center justify-center py-8 space-y-4">
-                  <div className="w-8 h-8 border-4 border-neutral-200 border-t-neutral-900 rounded-full animate-spin" />
-                  <p className="text-neutral-500 text-sm animate-pulse">
+                  <div className="w-8 h-8 border-4 border-neutral-200 dark:border-neutral-700 border-t-neutral-900 dark:border-t-neutral-100 rounded-full animate-spin" />
+                  <p className="text-neutral-500 dark:text-neutral-400 text-sm animate-pulse">
                     Chef is thinking of alternatives...
                   </p>
                 </div>
@@ -118,17 +118,17 @@ export function SubstitutionModal({
                   {substitutes.map((sub, idx) => (
                     <div
                       key={idx}
-                      className="bg-neutral-50 rounded-2xl p-4 border border-neutral-100 hover:border-neutral-200 transition-colors"
+                      className="bg-neutral-50 dark:bg-neutral-800 rounded-2xl p-4 border border-neutral-100 dark:border-neutral-700 hover:border-neutral-200 dark:hover:border-neutral-600 transition-colors"
                     >
                       <div className="flex items-start gap-3">
-                        <div className="mt-1 p-1.5 bg-green-100 text-green-700 rounded-lg">
+                        <div className="mt-1 p-1.5 bg-green-100 dark:bg-green-900/40 text-green-700 dark:text-green-300 rounded-lg">
                           <ArrowRight className="w-4 h-4" />
                         </div>
                         <div>
-                          <h4 className="font-bold text-neutral-900">
+                          <h4 className="font-bold text-neutral-900 dark:text-neutral-100">
                             {sub.name}
                           </h4>
-                          <p className="text-neutral-600 text-sm mt-1 leading-relaxed">
+                          <p className="text-neutral-600 dark:text-neutral-300 text-sm mt-1 leading-relaxed">
                             {sub.description}
                           </p>
                         </div>
@@ -137,15 +137,15 @@ export function SubstitutionModal({
                   ))}
                 </div>
               ) : (
-                <div className="text-center py-8 text-neutral-500">
+                <div className="text-center py-8 text-neutral-500 dark:text-neutral-400">
                   No substitutions found.
                 </div>
               )}
             </div>
 
             {/* Footer */}
-            <div className="p-4 bg-neutral-50 border-t border-neutral-100 text-center shrink-0 safe-area-bottom">
-              <p className="text-xs text-neutral-400">
+            <div className="p-4 bg-neutral-50 dark:bg-neutral-900 border-t border-neutral-100 dark:border-neutral-800 text-center shrink-0 safe-area-bottom">
+              <p className="text-xs text-neutral-400 dark:text-neutral-500">
                 AI-generated suggestions. Use your best judgment.
               </p>
             </div>

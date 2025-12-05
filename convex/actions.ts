@@ -129,7 +129,14 @@ export const generateRecipe = action({
         {
         "recipe_name": "string",
         "summary": "string (brief description, max 2 sentences)",
-        "prep_time": "string (e.g. '15 mins' or '15-20 mins')",
+        "difficulty": "string (MUST be one of: 'Beginner', 'Intermediate', 'Advanced')",
+        "cuisine": "string (e.g. 'Italian', 'Asian', 'Mexican', 'Mediterranean', 'American', 'French', 'Indian', 'Thai', 'Japanese', 'Middle Eastern', 'Fusion', etc.)",
+        "meal_type": "string (MUST be one of: 'Breakfast', 'Lunch', 'Dinner', 'Snack', 'Dessert', 'Appetizer', 'Side Dish')",
+        "dietary_tags": ["string (e.g. 'Vegetarian', 'Vegan', 'Gluten-Free', 'Dairy-Free', 'Keto', 'Low-Carb', 'High-Protein', 'Paleo', 'Nut-Free') - only include tags that truly apply]",
+        "active_time": "string (hands-on cooking time, e.g. '20 mins')",
+        "passive_time": "string (waiting/baking/marinating time, e.g. '40 mins' or '0 mins' if none)",
+        "total_time": "string (active + passive, e.g. '1 hour')",
+        "prep_time": "string (DEPRECATED - use total_time, but keep for backwards compatibility, e.g. '1 hour')",
         "servings": "string (e.g. '4')",
         "ingredients": ["string (quantity + item)"],
         "instructions": ["string (MAX 35 WORDS per step - break long steps into multiple steps)"],
@@ -140,7 +147,10 @@ export const generateRecipe = action({
         3. Make the recipe realistic, detailed, and easy to follow.
         4. Each instruction step MUST NOT EXCEED 35 words. Break complex steps into multiple shorter steps.
         5. Include time ranges in instructions where cooking times may vary (e.g., "Bake for 25-30 minutes until golden brown")
-        6. If you cannot determine what dish to make from the content, return:
+        6. IMPORTANT: Accurately assess difficulty based on techniques required, number of steps, and skill level needed.
+        7. IMPORTANT: Only include dietary tags that genuinely apply - don't add 'Vegetarian' if it contains meat, etc.
+        8. IMPORTANT: Break down time accurately - active_time is hands-on work, passive_time is waiting/baking/resting.
+        9. If you cannot determine what dish to make from the content, return:
         { "error": "Could not identify a recipe from this content. Please provide more specific cooking information." }
 
         -------------------------

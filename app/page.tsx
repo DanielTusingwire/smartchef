@@ -60,7 +60,7 @@ export default function HomePage() {
   }
 
   return (
-    <main className="min-h-screen bg-neutral-50">
+    <main className="min-h-screen bg-neutral-100 dark:bg-neutral-950">
       <AppLoader />
       {/* Header removed as per request */}
 

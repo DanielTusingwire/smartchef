@@ -6,6 +6,7 @@ import { ConvexClientProvider } from "@/components/convex-client-provider";
 import { PWARegister } from "@/components/pwa-register";
 import { PWAInstallPrompt } from "@/components/pwa-install-prompt";
 import { PWAHead } from "@/components/pwa-head";
+import { ThemeProvider } from "@/components/theme-provider";
 
 const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
@@ -84,16 +85,23 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <PWAHead />
       </head>
       <body className={`font-sans antialiased`}>
-        <PWARegister />
-        <ConvexClientProvider>
-          {children}
-          <PWAInstallPrompt />
-        </ConvexClientProvider>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <PWARegister />
+          <ConvexClientProvider>
+            {children}
+            <PWAInstallPrompt />
+          </ConvexClientProvider>
+        </ThemeProvider>
       </body>
     </html>
   );

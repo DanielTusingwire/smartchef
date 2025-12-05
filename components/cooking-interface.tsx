@@ -608,7 +608,7 @@ export function CookingInterface({ recipe, onBack }: CookingInterfaceProps) {
     navigator.clipboard.writeText(recipe.ingredients.join("\n"));
 
   return (
-    <div className="min-h-screen flex flex-col bg-gray-100">
+    <div className="min-h-screen flex flex-col bg-neutral-100 dark:bg-neutral-950">
       <style>{`
         @keyframes shine {
           0% { background-position: 200% center; }
@@ -651,7 +651,7 @@ export function CookingInterface({ recipe, onBack }: CookingInterfaceProps) {
           isScrollingDown ? "top-2" : "top-[80px]"
         )}
       >
-        <div className="pointer-events-auto bg-white/70 backdrop-blur-xl shadow-lg rounded-full p-1.5 flex items-center gap-1 border border-white/20 ring-1 ring-black/5">
+        <div className="pointer-events-auto bg-white/70 dark:bg-neutral-900/70 backdrop-blur-xl shadow-lg rounded-full p-1.5 flex items-center gap-1 border border-white/20 dark:border-neutral-700/20 ring-1 ring-black/5 dark:ring-white/5">
           <button
             onClick={() => setActiveTab("ingredients")}
             className={cn(
@@ -680,7 +680,7 @@ export function CookingInterface({ recipe, onBack }: CookingInterfaceProps) {
 
       {/* Title */}
       <div className="pt-24 px-4 sm:px-6 pb-4 max-w-4xl mx-auto w-full">
-        <h1 className="text-3xl sm:text-4xl font-bold text-neutral-900">
+        <h1 className="text-3xl sm:text-4xl font-bold text-neutral-900 dark:text-neutral-100">
           {recipe.recipe_name}
         </h1>
       </div>
@@ -695,7 +695,7 @@ export function CookingInterface({ recipe, onBack }: CookingInterfaceProps) {
             <div className="mb-6">
               <div className="flex items-end justify-between mb-2">
                 <div>
-                  <h2 className="text-2xl font-bold text-neutral-900">
+                  <h2 className="text-2xl font-bold text-neutral-900 dark:text-neutral-100">
                     Recommended Ingredients
                   </h2>
                   <p className="text-neutral-500 text-sm mt-1">
@@ -712,12 +712,12 @@ export function CookingInterface({ recipe, onBack }: CookingInterfaceProps) {
               </div>
             </div>
 
-            <div className="bg-white rounded-3xl p-2 border border-neutral-100 mb-24">
+            <div className="bg-white dark:bg-neutral-900 rounded-3xl p-2 border border-neutral-100 dark:border-neutral-800 mb-24">
               <div className="space-y-1">
                 {recipe.ingredients.map((ingredient, idx) => (
                   <div
                     key={idx}
-                    className="group flex items-center gap-4 p-4 rounded-2xl hover:bg-neutral-50 transition-colors cursor-pointer"
+                    className="group flex items-center gap-4 p-4 rounded-2xl hover:bg-neutral-50 dark:hover:bg-neutral-800 transition-colors cursor-pointer"
                     onClick={() =>
                       setCheckedIngredients((prev) => ({
                         ...prev,
@@ -738,8 +738,8 @@ export function CookingInterface({ recipe, onBack }: CookingInterfaceProps) {
                               className={cn(
                                 "text-lg font-semibold transition-all",
                                 checkedIngredients[idx]
-                                  ? "text-neutral-400 line-through"
-                                  : "text-neutral-900"
+                                  ? "text-neutral-400 dark:text-neutral-500 line-through"
+                                  : "text-neutral-900 dark:text-neutral-100"
                               )}
                             >
                               {name}
@@ -749,8 +749,8 @@ export function CookingInterface({ recipe, onBack }: CookingInterfaceProps) {
                                 className={cn(
                                   "text-sm mt-1 transition-all",
                                   checkedIngredients[idx]
-                                    ? "text-neutral-300 line-through"
-                                    : "text-neutral-500"
+                                    ? "text-neutral-300 dark:text-neutral-600 line-through"
+                                    : "text-neutral-500 dark:text-neutral-400"
                                 )}
                               >
                                 {measurement}
@@ -805,7 +805,7 @@ export function CookingInterface({ recipe, onBack }: CookingInterfaceProps) {
             <div className="hidden md:flex fixed bottom-8 left-1/2 -translate-x-1/2 z-40 gap-4 w-full max-w-md px-6">
               <button
                 onClick={copyIngredients}
-                className="flex-1 bg-white hover:bg-neutral-50 text-neutral-900 border border-neutral-200 font-bold py-4 px-6 rounded-full shadow-xl flex items-center justify-center gap-3 transition-all transform active:scale-95"
+                className="flex-1 bg-white dark:bg-neutral-900 hover:bg-neutral-50 dark:hover:bg-neutral-800 text-neutral-900 dark:text-neutral-100 border border-neutral-200 dark:border-neutral-700 font-bold py-4 px-6 rounded-full shadow-xl flex items-center justify-center gap-3 transition-all transform active:scale-95"
               >
                 <Copy className="w-5 h-5" />
                 Copy List
@@ -830,7 +830,7 @@ export function CookingInterface({ recipe, onBack }: CookingInterfaceProps) {
                 </button>
                 <button
                   onClick={copyIngredients}
-                  className="w-12 h-12 bg-white text-neutral-900 border border-neutral-200 rounded-full shadow-xl flex items-center justify-center active:scale-95 transition-transform"
+                  className="w-12 h-12 bg-white dark:bg-neutral-900 text-neutral-900 dark:text-neutral-100 border border-neutral-200 dark:border-neutral-700 rounded-full shadow-xl flex items-center justify-center active:scale-95 transition-transform"
                 >
                   <Copy className="w-5 h-5" />
                 </button>
@@ -859,8 +859,8 @@ export function CookingInterface({ recipe, onBack }: CookingInterfaceProps) {
                       "transition-all duration-500 rounded-3xl overflow-hidden snap-center snap-always mb-6 last:mb-0",
                       "h-[calc(100vh-280px)] md:h-auto md:min-h-[calc(100vh-280px)]",
                       isActive
-                        ? "bg-white scale-100 opacity-100"
-                        : "bg-neutral-200 scale-95 opacity-50 cursor-pointer hover:opacity-70"
+                        ? "bg-white dark:bg-neutral-900 scale-100 opacity-100"
+                        : "bg-neutral-200 dark:bg-neutral-800 scale-95 opacity-50 cursor-pointer hover:opacity-70"
                     )}
                     onClick={() =>
                       !isActive &&
@@ -875,13 +875,13 @@ export function CookingInterface({ recipe, onBack }: CookingInterfaceProps) {
                         <div
                           className={cn(
                             "px-3 py-1 rounded-lg flex items-center gap-2",
-                            isActive ? "bg-neutral-100" : "bg-neutral-300"
+                            isActive ? "bg-neutral-100 dark:bg-neutral-800" : "bg-neutral-300 dark:bg-neutral-700"
                           )}
                         >
-                          <span className="font-bold text-neutral-900">
+                          <span className="font-bold text-neutral-900 dark:text-neutral-100">
                             Step {idx + 1}
                           </span>
-                          <span className="text-neutral-500">↗</span>
+                          <span className="text-neutral-500 dark:text-neutral-400">↗</span>
                         </div>
                       </div>
 
@@ -890,7 +890,7 @@ export function CookingInterface({ recipe, onBack }: CookingInterfaceProps) {
                           {stepIngredients.map((ing, i) => (
                             <span
                               key={i}
-                              className="px-3 py-1 bg-neutral-100 rounded-lg text-sm text-neutral-600 font-medium"
+                              className="px-3 py-1 bg-neutral-100 dark:bg-neutral-800 rounded-lg text-sm text-neutral-600 dark:text-neutral-300 font-medium"
                             >
                               {ing.split(",")[0]}
                             </span>
@@ -913,7 +913,7 @@ export function CookingInterface({ recipe, onBack }: CookingInterfaceProps) {
                         return (
                           <>
                             {subheader && isActive && (
-                              <h3 className="text-2xl sm:text-3xl font-bold text-neutral-900 mb-4">
+                              <h3 className="text-2xl sm:text-3xl font-bold text-neutral-900 dark:text-neutral-100 mb-4">
                                 {subheader}
                               </h3>
                             )}
@@ -923,142 +923,142 @@ export function CookingInterface({ recipe, onBack }: CookingInterfaceProps) {
                               className={cn(
                                 "font-medium transition-all",
                                 isActive
-                                  ? "text-3xl sm:text-4xl leading-[1.5] text-neutral-900"
-                                  : "text-lg text-neutral-600 line-clamp-3 leading-relaxed"
+                                  ? "text-3xl sm:text-4xl leading-[1.5] text-neutral-900 dark:text-neutral-100"
+                                  : "text-lg text-neutral-600 dark:text-neutral-400 line-clamp-3 leading-relaxed"
                               )}
                             >
                               {isActive
                                 ? mainText
-                                    .split(
-                                      /(\d+(?:\s*[-–to]+\s*\d+)?\s*(?:minutes?|mins?|hours?|hrs?))/gi
-                                    )
-                                    .map((part, i) => {
-                                      if (
-                                        /\d+(?:\s*[-–to]+\s*\d+)?\s*(?:minutes?|mins?|hours?|hrs?)/i.test(
-                                          part
-                                        )
-                                      ) {
-                                        const t = extractTimer(part);
-                                        const timerKey = `${idx}-${i}`;
-                                        const timerState = timers[timerKey];
-                                        const hasTimer =
-                                          timerState &&
-                                          timerState.remaining > 0;
+                                  .split(
+                                    /(\d+(?:\s*[-–to]+\s*\d+)?\s*(?:minutes?|mins?|hours?|hrs?))/gi
+                                  )
+                                  .map((part, i) => {
+                                    if (
+                                      /\d+(?:\s*[-–to]+\s*\d+)?\s*(?:minutes?|mins?|hours?|hrs?)/i.test(
+                                        part
+                                      )
+                                    ) {
+                                      const t = extractTimer(part);
+                                      const timerKey = `${idx}-${i}`;
+                                      const timerState = timers[timerKey];
+                                      const hasTimer =
+                                        timerState &&
+                                        timerState.remaining > 0;
 
-                                        // Determine timer state for color coding
-                                        let timerStatus:
-                                          | "inactive"
-                                          | "running"
-                                          | "check"
-                                          | "max" = "inactive";
-                                        if (hasTimer) {
-                                          const elapsed =
-                                            timerState.minTime -
-                                            timerState.remaining;
-                                          if (elapsed < 0) {
-                                            // Still counting down to minTime
-                                            timerStatus = "running";
+                                      // Determine timer state for color coding
+                                      let timerStatus:
+                                        | "inactive"
+                                        | "running"
+                                        | "check"
+                                        | "max" = "inactive";
+                                      if (hasTimer) {
+                                        const elapsed =
+                                          timerState.minTime -
+                                          timerState.remaining;
+                                        if (elapsed < 0) {
+                                          // Still counting down to minTime
+                                          timerStatus = "running";
+                                        } else {
+                                          // Past minTime - check if we're in the range or past maxTime
+                                          const totalRange =
+                                            timerState.maxTime -
+                                            timerState.minTime;
+                                          const timeIntoRange = elapsed;
+                                          if (timeIntoRange <= totalRange) {
+                                            // Still in check zone (between min and max)
+                                            timerStatus = "check";
                                           } else {
-                                            // Past minTime - check if we're in the range or past maxTime
-                                            const totalRange =
-                                              timerState.maxTime -
-                                              timerState.minTime;
-                                            const timeIntoRange = elapsed;
-                                            if (timeIntoRange <= totalRange) {
-                                              // Still in check zone (between min and max)
-                                              timerStatus = "check";
-                                            } else {
-                                              // Past max time
-                                              timerStatus = "max";
-                                            }
+                                            // Past max time
+                                            timerStatus = "max";
                                           }
                                         }
-
-                                        return (
-                                          <span
-                                            key={i}
-                                            onClick={(e) => {
-                                              e.stopPropagation();
-                                              if (t) {
-                                                setTimers((prev) => {
-                                                  const current =
-                                                    prev[timerKey];
-                                                  if (current) {
-                                                    // Toggle running state
-                                                    return {
-                                                      ...prev,
-                                                      [timerKey]: {
-                                                        ...current,
-                                                        isRunning:
-                                                          !current.isRunning,
-                                                      },
-                                                    };
-                                                  } else {
-                                                    // Initialize and start at minTime
-                                                    return {
-                                                      ...prev,
-                                                      [timerKey]: {
-                                                        remaining: t.min,
-                                                        isRunning: true,
-                                                        minTime: t.min,
-                                                        maxTime: t.max,
-                                                      },
-                                                    };
-                                                  }
-                                                });
-                                              }
-                                            }}
-                                            className={cn(
-                                              "font-bold cursor-pointer inline-flex items-center gap-2 px-3 py-1 rounded-2xl transition-all",
-                                              timerStatus === "running" &&
-                                                "bg-green-50 text-green-600 border-2 border-green-200",
-                                              timerStatus === "check" &&
-                                                "bg-yellow-50 text-yellow-700 border-2 border-yellow-300 animate-pulse",
-                                              timerStatus === "max" &&
-                                                "bg-red-50 text-red-600 border-2 border-red-300 animate-pulse",
-                                              timerStatus === "inactive" &&
-                                                "text-green-600 hover:bg-green-50",
-                                              isActive &&
-                                                timerStatus === "inactive" &&
-                                                "timer-shine"
-                                            )}
-                                            style={{
-                                              WebkitTextFillColor:
-                                                isActive &&
-                                                timerStatus === "inactive"
-                                                  ? "transparent"
-                                                  : "initial",
-                                            }}
-                                          >
-                                            {hasTimer ? (
-                                              <span className="font-mono flex items-center gap-1.5">
-                                                {formatTime(
-                                                  timerState.remaining
-                                                )}
-                                                {timerStatus === "check" && (
-                                                  <span className="text-xs font-bold">
-                                                    ✓ Check
-                                                  </span>
-                                                )}
-                                                {timerStatus === "max" && (
-                                                  <span className="text-xs font-bold">
-                                                    ⚠ Max
-                                                  </span>
-                                                )}
-                                                {!timerState.isRunning && (
-                                                  <span className="text-xs">
-                                                    (Paused)
-                                                  </span>
-                                                )}
-                                              </span>
-                                            ) : (
-                                              part
-                                            )}
-                                          </span>
-                                        );
                                       }
-                                      return <span key={i}>{part}</span>;
-                                    })
+
+                                      return (
+                                        <span
+                                          key={i}
+                                          onClick={(e) => {
+                                            e.stopPropagation();
+                                            if (t) {
+                                              setTimers((prev) => {
+                                                const current =
+                                                  prev[timerKey];
+                                                if (current) {
+                                                  // Toggle running state
+                                                  return {
+                                                    ...prev,
+                                                    [timerKey]: {
+                                                      ...current,
+                                                      isRunning:
+                                                        !current.isRunning,
+                                                    },
+                                                  };
+                                                } else {
+                                                  // Initialize and start at minTime
+                                                  return {
+                                                    ...prev,
+                                                    [timerKey]: {
+                                                      remaining: t.min,
+                                                      isRunning: true,
+                                                      minTime: t.min,
+                                                      maxTime: t.max,
+                                                    },
+                                                  };
+                                                }
+                                              });
+                                            }
+                                          }}
+                                          className={cn(
+                                            "font-bold cursor-pointer inline-flex items-center gap-2 px-3 py-1 rounded-2xl transition-all",
+                                            timerStatus === "running" &&
+                                            "bg-green-50 text-green-600 border-2 border-green-200",
+                                            timerStatus === "check" &&
+                                            "bg-yellow-50 text-yellow-700 border-2 border-yellow-300 animate-pulse",
+                                            timerStatus === "max" &&
+                                            "bg-red-50 text-red-600 border-2 border-red-300 animate-pulse",
+                                            timerStatus === "inactive" &&
+                                            "text-green-600 hover:bg-green-50",
+                                            isActive &&
+                                            timerStatus === "inactive" &&
+                                            "timer-shine"
+                                          )}
+                                          style={{
+                                            WebkitTextFillColor:
+                                              isActive &&
+                                                timerStatus === "inactive"
+                                                ? "transparent"
+                                                : "initial",
+                                          }}
+                                        >
+                                          {hasTimer ? (
+                                            <span className="font-mono flex items-center gap-1.5">
+                                              {formatTime(
+                                                timerState.remaining
+                                              )}
+                                              {timerStatus === "check" && (
+                                                <span className="text-xs font-bold">
+                                                  ✓ Check
+                                                </span>
+                                              )}
+                                              {timerStatus === "max" && (
+                                                <span className="text-xs font-bold">
+                                                  ⚠ Max
+                                                </span>
+                                              )}
+                                              {!timerState.isRunning && (
+                                                <span className="text-xs">
+                                                  (Paused)
+                                                </span>
+                                              )}
+                                            </span>
+                                          ) : (
+                                            part
+                                          )}
+                                        </span>
+                                      );
+                                    }
+                                    return <span key={i}>{part}</span>;
+                                  })
                                 : instruction}
                             </AutoFitText>
                           </>
@@ -1076,15 +1076,15 @@ export function CookingInterface({ recipe, onBack }: CookingInterfaceProps) {
       {/* Progress Bar */}
       {activeTab === "directions" && (
         <div className="hidden md:block fixed bottom-8 left-1/2 -translate-x-1/2 z-40 w-full max-w-md px-4">
-          <div className="bg-white/90 backdrop-blur-xl border border-neutral-200 shadow-2xl rounded-2xl p-4">
+          <div className="bg-white/90 dark:bg-neutral-900/90 backdrop-blur-xl border border-neutral-200 dark:border-neutral-700 shadow-2xl rounded-2xl p-4">
             <div className="flex items-center justify-between mb-3">
-              <span className="text-sm font-semibold text-neutral-900">
+              <span className="text-sm font-semibold text-neutral-900 dark:text-neutral-100">
                 Step {currentStepIndex + 1}{" "}
-                <span className="text-neutral-400">
+                <span className="text-neutral-400 dark:text-neutral-500">
                   of {recipe.instructions.length}
                 </span>
               </span>
-              <span className="text-xs font-bold text-neutral-900">
+              <span className="text-xs font-bold text-neutral-900 dark:text-neutral-100">
                 {Math.round(
                   ((currentStepIndex + 1) / recipe.instructions.length) * 100
                 )}
@@ -1098,7 +1098,7 @@ export function CookingInterface({ recipe, onBack }: CookingInterfaceProps) {
                   key={i}
                   className={cn(
                     "h-full flex-1 rounded-full transition-all duration-300",
-                    i <= currentStepIndex ? "bg-neutral-900" : "bg-neutral-100"
+                    i <= currentStepIndex ? "bg-neutral-900 dark:bg-neutral-100" : "bg-neutral-100 dark:bg-neutral-800"
                   )}
                 />
               ))}

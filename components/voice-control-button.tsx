@@ -67,7 +67,7 @@ export function VoiceControlButton({
         {/* Help Button */}
         <button
           onClick={onShowHelp}
-          className="p-3 bg-neutral-100 hover:bg-neutral-200 text-neutral-600 rounded-full shadow-lg transition-all transform hover:scale-105 active:scale-95 pointer-events-auto"
+          className="p-3 bg-neutral-100 dark:bg-neutral-800 hover:bg-neutral-200 dark:hover:bg-neutral-700 text-neutral-600 dark:text-neutral-300 rounded-full shadow-lg transition-all transform hover:scale-105 active:scale-95 pointer-events-auto"
           title="Voice commands help"
         >
           <HelpCircle className="w-5 h-5" />
@@ -80,7 +80,7 @@ export function VoiceControlButton({
             "relative p-5 rounded-full shadow-2xl transition-all transform hover:scale-105 active:scale-95 pointer-events-auto",
             isListening
               ? "bg-red-500 hover:bg-red-600 text-white animate-pulse"
-              : "bg-neutral-900 hover:bg-neutral-800 text-white"
+              : "bg-neutral-900 dark:bg-neutral-800 hover:bg-neutral-800 dark:hover:bg-neutral-700 text-white"
           )}
           title={isListening ? "Stop listening" : "Start voice control"}
         >
@@ -183,7 +183,7 @@ export function VoiceHelpModal({ isOpen, onClose }: VoiceHelpModalProps) {
             exit={isDesktop ? { opacity: 0, scale: 0.95 } : { y: "100%" }}
             transition={{ type: "spring", damping: 25, stiffness: 300 }}
             className={cn(
-              "fixed z-[70] bg-white shadow-2xl overflow-hidden flex flex-col",
+              "fixed z-[70] bg-white dark:bg-neutral-900 shadow-2xl overflow-hidden flex flex-col",
               isDesktop
                 ? "left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-2xl rounded-3xl max-h-[85vh]"
                 : "bottom-0 left-0 right-0 rounded-t-[2.5rem] max-h-[85vh]"
@@ -199,15 +199,15 @@ export function VoiceHelpModal({ isOpen, onClose }: VoiceHelpModalProps) {
           >
             {/* Mobile Drag Handle */}
             {!isDesktop && (
-              <div className="w-full flex justify-center pt-4 pb-2 bg-neutral-900">
-                <div className="w-12 h-1.5 bg-neutral-700 rounded-full" />
+              <div className="w-full flex justify-center pt-4 pb-2 bg-neutral-900 dark:bg-neutral-950">
+                <div className="w-12 h-1.5 bg-neutral-700 dark:bg-neutral-600 rounded-full" />
               </div>
             )}
 
             {/* Header */}
             <div
               className={cn(
-                "bg-white border-b border-neutral-100 sticky top-0 z-10",
+                "bg-white dark:bg-neutral-900 border-b border-neutral-100 dark:border-neutral-800 sticky top-0 z-10",
                 isDesktop ? "p-6 rounded-t-3xl" : "px-6 pb-6 pt-2"
               )}
             >
@@ -217,10 +217,10 @@ export function VoiceHelpModal({ isOpen, onClose }: VoiceHelpModalProps) {
                     <Volume2 className="w-6 h-6 text-blue-600" />
                   </div>
                   <div>
-                    <h2 className="text-2xl font-bold text-neutral-900">
+                    <h2 className="text-2xl font-bold text-neutral-900 dark:text-neutral-100">
                       Voice Commands
                     </h2>
-                    <p className="text-sm text-neutral-500">
+                    <p className="text-sm text-neutral-500 dark:text-neutral-400">
                       Hands-free cooking made easy
                     </p>
                   </div>
@@ -229,7 +229,7 @@ export function VoiceHelpModal({ isOpen, onClose }: VoiceHelpModalProps) {
                   onClick={onClose}
                   className="p-2 hover:bg-neutral-100 rounded-full transition-colors"
                 >
-                  <X className="w-6 h-6 text-neutral-500" />
+                  <X className="w-6 h-6 text-neutral-500 dark:text-neutral-400" />
                 </button>
               </div>
             </div>
@@ -238,23 +238,23 @@ export function VoiceHelpModal({ isOpen, onClose }: VoiceHelpModalProps) {
             <div className="p-6 space-y-6 overflow-y-auto custom-scrollbar">
               {commands.map((section) => (
                 <div key={section.category}>
-                  <h3 className="text-lg font-bold text-neutral-900 mb-3">
+                  <h3 className="text-lg font-bold text-neutral-900 dark:text-neutral-100 mb-3">
                     {section.category}
                   </h3>
                   <div className="space-y-2">
                     {section.items.map((item) => (
                       <div
                         key={item.command}
-                        className="flex items-start gap-3 p-3 bg-neutral-50 rounded-xl hover:bg-neutral-100 transition-colors"
+                        className="flex items-start gap-3 p-3 bg-neutral-50 dark:bg-neutral-800 rounded-xl hover:bg-neutral-100 dark:hover:bg-neutral-700 transition-colors"
                       >
-                        <div className="p-1.5 bg-blue-100 rounded-lg mt-0.5">
-                          <Mic className="w-4 h-4 text-blue-600" />
+                        <div className="p-1.5 bg-blue-100 dark:bg-blue-900/40 rounded-lg mt-0.5">
+                          <Mic className="w-4 h-4 text-blue-600 dark:text-blue-400" />
                         </div>
                         <div className="flex-1">
-                          <p className="font-semibold text-neutral-900">
+                          <p className="font-semibold text-neutral-900 dark:text-neutral-100">
                             "{item.command}"
                           </p>
-                          <p className="text-sm text-neutral-600">
+                          <p className="text-sm text-neutral-600 dark:text-neutral-400">
                             {item.description}
                           </p>
                         </div>
@@ -264,8 +264,8 @@ export function VoiceHelpModal({ isOpen, onClose }: VoiceHelpModalProps) {
                 </div>
               ))}
 
-              <div className="p-4 bg-blue-50 rounded-xl border border-blue-100">
-                <p className="text-sm text-blue-900">
+              <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-xl border border-blue-100 dark:border-blue-900/50">
+                <p className="text-sm text-blue-900 dark:text-blue-100">
                   <strong>💡 Tip:</strong> Click the microphone button and speak
                   clearly. The app will confirm what it heard and execute the
                   command.

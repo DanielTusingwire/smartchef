@@ -22,7 +22,7 @@ export function LoadingModal({ onCancel }: { onCancel?: () => void }) {
 
   return (
     <div className="fixed inset-0 bg-neutral-900/60 backdrop-blur-sm flex items-center justify-center z-50">
-      <div className="bg-white rounded-3xl p-12 max-w-sm w-full mx-4 text-center space-y-8">
+      <div className="bg-white dark:bg-neutral-900 rounded-3xl p-12 max-w-sm w-full mx-4 text-center space-y-8">
         <div className="flex justify-center items-center h-40">
           <div className="relative w-40 h-40">
             {/* Rotating circular background */}
@@ -41,7 +41,7 @@ export function LoadingModal({ onCancel }: { onCancel?: () => void }) {
                       marginTop: "-24px",
                     }}
                   >
-                    <div className="bg-gradient-to-br from-neutral-100 to-neutral-200 rounded-full w-12 h-12 flex items-center justify-center">
+                    <div className="bg-gradient-to-br from-neutral-100 to-neutral-200 dark:from-neutral-800 dark:to-neutral-700 rounded-full w-12 h-12 flex items-center justify-center">
                       {emoji}
                     </div>
                   </div>
@@ -51,21 +51,21 @@ export function LoadingModal({ onCancel }: { onCancel?: () => void }) {
 
             {/* Center circle with spinner */}
             <div className="absolute inset-0 flex items-center justify-center">
-              <div className="w-16 h-16 border-4 border-neutral-200 border-t-neutral-900 rounded-full animate-spin" />
+              <div className="w-16 h-16 border-4 border-neutral-200 dark:border-neutral-700 border-t-neutral-900 dark:border-t-neutral-100 rounded-full animate-spin" />
             </div>
           </div>
         </div>
 
         {/* Text content */}
         <div className="space-y-2">
-          <p className="text-xl font-bold text-neutral-900">Extracting recipe...</p>
-          <p className="text-sm text-neutral-500">Estimated time: 15 to 25 seconds</p>
+          <p className="text-xl font-bold text-neutral-900 dark:text-neutral-100">Extracting recipe...</p>
+          <p className="text-sm text-neutral-500 dark:text-neutral-400">Estimated time: 15 to 25 seconds</p>
         </div>
 
         <div className="space-y-2">
-          <div className="w-full bg-neutral-200 rounded-full h-2 overflow-hidden">
+          <div className="w-full bg-neutral-200 dark:bg-neutral-800 rounded-full h-2 overflow-hidden">
             <div
-              className="bg-neutral-900 h-full rounded-full transition-all duration-300 ease-out"
+              className="bg-neutral-900 dark:bg-neutral-100 h-full rounded-full transition-all duration-300 ease-out"
               style={{
                 width: `${progress}%`,
               }}
@@ -77,7 +77,7 @@ export function LoadingModal({ onCancel }: { onCancel?: () => void }) {
         {onCancel && (
           <button
             onClick={onCancel}
-            className="w-full py-3 px-4 text-neutral-600 hover:bg-neutral-100 rounded-2xl transition-colors text-sm font-medium"
+            className="w-full py-3 px-4 text-neutral-600 dark:text-neutral-400 hover:bg-neutral-100 dark:hover:bg-neutral-800 rounded-2xl transition-colors text-sm font-medium"
           >
             Cancel
           </button>
