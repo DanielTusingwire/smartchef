@@ -4,6 +4,8 @@ import { useState } from "react"
 import { X, ArrowRight } from "lucide-react"
 import { ScrollAwareHeader } from "@/components/scroll-aware-header"
 import { cn } from "@/lib/utils"
+import Lottie from "lottie-react"
+import chefAnimation from "../public/chef.json"
 
 interface RecipeOverviewProps {
   recipe: {
@@ -79,11 +81,9 @@ export function RecipeOverview({ recipe, onStartCooking, onBack }: RecipeOvervie
         <div className="w-full aspect-video bg-neutral-100 dark:bg-neutral-900 rounded-3xl overflow-hidden mb-8 shadow-sm relative">
           {!imageLoaded && (
             <div className="absolute inset-0 flex items-center justify-center bg-neutral-100 dark:bg-neutral-900 z-10">
-              <img
-                src="/loadLogo.png"
-                alt="Loading..."
-                className="w-20 h-20 animate-spin object-contain"
-              />
+              <div className="w-32 h-32 sm:w-48 sm:h-48">
+                <Lottie animationData={chefAnimation} loop={true} />
+              </div>
             </div>
           )}
           <img

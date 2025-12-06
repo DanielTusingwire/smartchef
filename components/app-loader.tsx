@@ -2,6 +2,8 @@
 
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Lottie from "lottie-react";
+import chefAnimation from "../public/chef.json";
 
 export function AppLoader() {
   const fullText = "Preparing your kitchen...";
@@ -40,18 +42,10 @@ export function AppLoader() {
         >
           <div className="text-center">
 
-            {/* PULSE LOGO */}
-            <motion.img
-              src="/loadLogo.png"
-              alt="Chef Logo"
-              className="w-20 h-20 sm:w-32 sm:h-32 mx-auto mb-6 object-contain"
-              animate={{ scale: [1, 1.15, 1] }}
-              transition={{
-                duration: 1.8,
-                repeat: Infinity,
-                ease: "easeInOut",
-              }}
-            />
+            {/* Lottie Animation */}
+            <div className="w-40 h-40 sm:w-56 sm:h-56 mx-auto mb-2">
+              <Lottie animationData={chefAnimation} loop={true} />
+            </div>
 
             {/* Typing Subtitle */}
             <motion.p
