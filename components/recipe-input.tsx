@@ -23,6 +23,17 @@ export function RecipeInput({ onGenerate, isLoading }: RecipeInputProps) {
   const { greeting, placeholder } = useTimeBasedGreeting();
   const [isFocused, setIsFocused] = useState(false);
   const [showFeedback, setShowFeedback] = useState(false);
+  const [showMobileTooltip, setShowMobileTooltip] = useState(false);
+
+  useEffect(() => {
+    // Show tooltip after a short delay for effect, then hide after 30s
+    const showTimer = setTimeout(() => setShowMobileTooltip(true), 1000);
+    const hideTimer = setTimeout(() => setShowMobileTooltip(false), 31000);
+    return () => {
+      clearTimeout(showTimer);
+      clearTimeout(hideTimer);
+    };
+  }, []);
 
 
 
@@ -69,12 +80,25 @@ export function RecipeInput({ onGenerate, isLoading }: RecipeInputProps) {
               {/* Mobile: Pill icons */}
               <div className="sm:hidden flex items-center gap-3 bg-white dark:bg-neutral-900 border border-neutral-100 dark:border-neutral-700 rounded-full px-2 py-1">
                 <ThemeToggle />
-                <button
-                  onClick={() => setShowFeedback(true)}
-                  className="p-2 text-neutral-500 hover:text-neutral-900 dark:hover:text-neutral-100 dark:text-neutral-400 hover:bg-neutral-100 dark:hover:bg-neutral-800 rounded-full transition-colors"
-                >
-                  <MessageSquare className="w-5 h-5" />
-                </button>
+                <div className="relative">
+                  <button
+                    onClick={() => {
+                      setShowFeedback(true);
+                      setShowMobileTooltip(false);
+                    }}
+                    className="p-2 text-neutral-500 hover:text-neutral-900 dark:hover:text-neutral-100 dark:text-neutral-400 hover:bg-neutral-100 dark:hover:bg-neutral-800 rounded-full transition-colors"
+                  >
+                    <MessageSquare className="w-5 h-5" />
+                  </button>
+                  {showMobileTooltip && (
+                    <div className="absolute top-full right-0 mt-4 w-32 p-2.5 bg-white dark:bg-neutral-800 text-neutral-900 dark:text-neutral-100 text-[10px] font-bold text-center rounded-2xl shadow-sm border border-neutral-100 dark:border-neutral-700 animate-in fade-in slide-in-from-top-2 z-50 pointer-events-none">
+                      {/* Floating Bubbles Pointer */}
+                      <div className="absolute -top-1 right-4 w-2.5 h-2.5 bg-white dark:bg-neutral-800 border-t border-l border-neutral-100 dark:border-neutral-700 rounded-full" />
+                      <div className="absolute -top-2.5 right-3 w-1.5 h-1.5 bg-white dark:bg-neutral-800 rounded-full" />
+                      Send your feedback
+                    </div>
+                  )}
+                </div>
               </div>
             </div>
           }
