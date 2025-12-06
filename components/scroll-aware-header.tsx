@@ -36,7 +36,7 @@ export function ScrollAwareHeader({
   return (
     <div
       className={cn(
-        "fixed top-0 left-0 right-0 z-50 w-full bg-white dark:bg-neutral-900 px-4 py-4 transition-transform duration-300 shadow-sm border-b border-neutral-200 dark:border-neutral-800",
+        "fixed top-0 left-0 right-0 z-50 w-full bg-neutral-100/80 dark:bg-neutral-950/80 backdrop-blur-md px-4 py-4 transition-transform duration-300",
         showHeader ? "translate-y-0" : "-translate-y-full",
         className
       )}

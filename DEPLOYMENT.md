@@ -21,7 +21,7 @@ git commit -m "Ready for deployment"
 # git push -u origin main
 ```
 
-## Step 2: Deploy Convex to Production
+## Step 2: Deploy Convex to Production (CRITICAL)
 
 Before deploying the frontend, you need to deploy your backend functions and schema to a live production Convex instance.
 
@@ -35,7 +35,15 @@ Before deploying the frontend, you need to deploy your backend functions and sch
     *   `CONVEX_DEPLOYMENT`
     *   `NEXT_PUBLIC_CONVEX_URL`
 
-    *Keep these safe, you will need them for Vercel.*
+3.  **ADD API KEY TO CONVEX DASHBOARD**:
+    *   Go to [dashboard.convex.dev](https://dashboard.convex.dev)
+    *   Select your project (e.g., `chef-gemini-clone` or `fastidious-elk-237`).
+    *   Go to **Settings** -> **Environment Variables**.
+    *   Add a new variable:
+        *   **Key**: `GEMINI_API_KEY`
+        *   **Value**: *(Paste your Google Gemini API Key here)*
+    *   **Click Save**.
+    *   *Without this, your "Generate Recipe" feature will throw a Server Error.*
 
 ## Step 3: Deployment on Vercel
 
@@ -48,13 +56,12 @@ Before deploying the frontend, you need to deploy your backend functions and sch
 4.  **Environment Variables** (CRITICAL):
     Expand the "Environment Variables" section and add the following keys.
 
-    | Key | Value |
-    | :--- | :--- |
-    | `CONVEX_DEPLOYMENT` | *(From Step 2 output)* |
-    | `NEXT_PUBLIC_CONVEX_URL` | *(From Step 2 output)* |
-    | `GOOGLE_GENERATIVE_AI_API_KEY` | *(Your Gemini API Key from .env.local)* |
+    | Key | Value | Source |
+    | :--- | :--- | :--- |
+    | `CONVEX_DEPLOYMENT` | *(e.g., fastidious-elk-237)* | From Step 2 Output (Deployment Name) |
+    | `NEXT_PUBLIC_CONVEX_URL` | *(e.g., https://...convex.cloud)* | From Step 2 Output |
 
-    *Note: You can find your local Gemini Key in `.env.local` if you forget it.*
+    *Note: You do NOT need `GEMINI_API_KEY` in Vercel, only in the Convex Dashboard.*
 
 5.  Click **Deploy**.
 
@@ -66,5 +73,5 @@ Before deploying the frontend, you need to deploy your backend functions and sch
 
 ## Troubleshooting
 
-*   **Build Errors**: Check the "Logs" tab in Vercel. Common errors include missing environment variables or type errors.
+*   **Server Error "Called by client"**: This means `GEMINI_API_KEY` is missing in the **Convex Dashboard**. Go back to Step 2.3.
 *   **Convex Errors**: If data isn't loading, verify `NEXT_PUBLIC_CONVEX_URL` in Vercel matches your production Convex URL.

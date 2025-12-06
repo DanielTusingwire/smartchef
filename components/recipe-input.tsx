@@ -56,18 +56,18 @@ export function RecipeInput({ onGenerate, isLoading }: RecipeInputProps) {
           rightContent={
             <div className="flex items-center gap-2">
               {/* Desktop: Show both buttons */}
-              <div className="hidden sm:flex items-center gap-2">
+              <div className="hidden sm:flex items-center gap-1 bg-white dark:bg-neutral-900 border border-neutral-100 dark:border-neutral-700 rounded-full px-2 py-1">
                 <ThemeToggle />
                 <button
                   onClick={() => setShowFeedback(true)}
-                  className="px-4 py-2 bg-neutral-100 dark:bg-neutral-800 hover:bg-neutral-200 dark:hover:bg-neutral-700 text-neutral-900 dark:text-neutral-100 text-sm font-semibold rounded-full transition-colors"
+                  className="px-4 py-2 text-neutral-500 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 hover:bg-neutral-100 dark:hover:bg-neutral-800 text-sm font-semibold rounded-full transition-colors"
                 >
                   Feedback
                 </button>
               </div>
 
               {/* Mobile: Pill icons */}
-              <div className="sm:hidden flex items-center gap-3 bg-white dark:bg-neutral-900 border border-neutral-100 dark:border-neutral-700 rounded-full px-2 py-1 shadow-sm">
+              <div className="sm:hidden flex items-center gap-3 bg-white dark:bg-neutral-900 border border-neutral-100 dark:border-neutral-700 rounded-full px-2 py-1">
                 <ThemeToggle />
                 <button
                   onClick={() => setShowFeedback(true)}
@@ -176,7 +176,7 @@ export function RecipeInput({ onGenerate, isLoading }: RecipeInputProps) {
                       className="w-full h-14 bg-neutral-900 dark:bg-neutral-100 hover:bg-neutral-800 dark:hover:bg-neutral-200 text-white dark:text-neutral-900 text-lg font-medium rounded-full shadow-lg transition-all hover:scale-[1.02] active:scale-[0.98]"
                       disabled={isLoading}
                     >
-                      {isLoading ? "Cooking..." : "Create Recipe"}
+                      {isLoading ? "Cooking..." : "Generate Recipe"}
                     </Button>
                   </div>
                 </div>
