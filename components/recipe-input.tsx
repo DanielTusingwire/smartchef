@@ -15,9 +15,14 @@ import { useTypewriter } from "@/hooks/use-typewriter";
 interface RecipeInputProps {
   onGenerate: (input: string, inputType: "youtube" | "text") => Promise<void>;
   isLoading: boolean;
+  externalError?: string | null;
 }
 
-export function RecipeInput({ onGenerate, isLoading }: RecipeInputProps) {
+export function RecipeInput({
+  onGenerate,
+  isLoading,
+  externalError,
+}: RecipeInputProps) {
   const [youtubeUrl, setYoutubeUrl] = useState("");
   const [recipeText, setRecipeText] = useState("");
   const [inputType, setInputType] = useState<"youtube" | "text">("text");
@@ -26,6 +31,12 @@ export function RecipeInput({ onGenerate, isLoading }: RecipeInputProps) {
   const [isFocused, setIsFocused] = useState(false);
   const [showFeedback, setShowFeedback] = useState(false);
   const [showMobileTooltip, setShowMobileTooltip] = useState(false);
+
+  useEffect(() => {
+    if (externalError) {
+      setError(externalError);
+    }
+  }, [externalError]);
 
   // Dynamic Typewriter Phrases
   const textPhrases = [
@@ -70,6 +81,7 @@ export function RecipeInput({ onGenerate, isLoading }: RecipeInputProps) {
     try {
       await onGenerate(input, inputType);
     } catch {
+      // Error is handled by parent props now, but keep fallback
       setError("Failed to generate recipe. Please try again.");
     }
   };
@@ -206,8 +218,9 @@ export function RecipeInput({ onGenerate, isLoading }: RecipeInputProps) {
 
                   {/* ERROR */}
                   {error && (
-                    <div className="text-red-500 text-sm font-medium mt-2">
-                      {error}
+                    <div className="flex items-center gap-2 mt-4 text-red-600 dark:text-red-400 bg-red-50 dark:bg-red-900/10 px-4 py-3 rounded-2xl animate-in fade-in slide-in-from-top-2">
+                      <div className="w-1.5 h-1.5 rounded-full bg-red-500 animate-pulse" />
+                      <span className="text-sm font-medium">{error}</span>
                     </div>
                   )}
 

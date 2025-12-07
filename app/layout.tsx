@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ConvexClientProvider } from "@/components/convex-client-provider";
-import { PWARegister } from "@/components/pwa-register";
+import { PWAUpdateToast } from "@/components/pwa-update-toast";
 import { PWAInstallPrompt } from "@/components/pwa-install-prompt";
 import { PWAHead } from "@/components/pwa-head";
 import { ThemeProvider } from "@/components/theme-provider";
@@ -18,7 +18,15 @@ export const metadata: Metadata = {
     "Convert YouTube cooking videos and unstructured recipes into clean, structured recipe cards with voice-controlled cooking guidance",
   applicationName: "Chef",
   generator: "Next.js",
-  keywords: ["recipe", "cooking", "AI", "voice control", "YouTube", "food", "chef"],
+  keywords: [
+    "recipe",
+    "cooking",
+    "AI",
+    "voice control",
+    "YouTube",
+    "food",
+    "chef",
+  ],
   authors: [{ name: "Chef Team" }],
   creator: "Chef Team",
   publisher: "Chef Team",
@@ -32,8 +40,16 @@ export const metadata: Metadata = {
       { url: "/favicon.ico" },
       { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
       { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
-      { url: "/android-chrome-192x192.png", sizes: "192x192", type: "image/png" },
-      { url: "/android-chrome-512x512.png", sizes: "512x512", type: "image/png" },
+      {
+        url: "/android-chrome-192x192.png",
+        sizes: "192x192",
+        type: "image/png",
+      },
+      {
+        url: "/android-chrome-512x512.png",
+        sizes: "512x512",
+        type: "image/png",
+      },
     ],
     apple: [
       { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
@@ -50,7 +66,8 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "/",
     title: "Chef - AI Recipe Assistant",
-    description: "Convert YouTube cooking videos into structured recipes with voice control",
+    description:
+      "Convert YouTube cooking videos into structured recipes with voice control",
     siteName: "Chef",
     images: [
       {
@@ -64,7 +81,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary",
     title: "Chef - AI Recipe Assistant",
-    description: "Convert YouTube cooking videos into structured recipes with voice control",
+    description:
+      "Convert YouTube cooking videos into structured recipes with voice control",
     images: ["/android-chrome-512x512.png"],
   },
   viewport: {
@@ -97,7 +115,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <PWARegister />
+          <PWAUpdateToast />
           <ConvexClientProvider>
             {children}
             <PWAInstallPrompt />
