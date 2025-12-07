@@ -10,6 +10,8 @@ import { ThemeToggle } from "@/components/theme-toggle";
 import { MessageSquare } from "lucide-react";
 import { cn } from "@/lib/utils";
 
+import { useTypewriter } from "@/hooks/use-typewriter";
+
 interface RecipeInputProps {
   onGenerate: (input: string, inputType: "youtube" | "text") => Promise<void>;
   isLoading: boolean;
@@ -20,10 +22,29 @@ export function RecipeInput({ onGenerate, isLoading }: RecipeInputProps) {
   const [recipeText, setRecipeText] = useState("");
   const [inputType, setInputType] = useState<"youtube" | "text">("text");
   const [error, setError] = useState("");
-  const { greeting, placeholder } = useTimeBasedGreeting();
+  const { greeting } = useTimeBasedGreeting();
   const [isFocused, setIsFocused] = useState(false);
   const [showFeedback, setShowFeedback] = useState(false);
   const [showMobileTooltip, setShowMobileTooltip] = useState(false);
+
+  // Dynamic Typewriter Phrases
+  const textPhrases = [
+    "What are you craving right now?",
+    "List ingredients like 'Chicken, Rice, Peppers'...",
+    "Enter a dish name like 'Spaghetti Carbonara'...",
+    "Describe the meal you want to cook...",
+    "What shall we cook today?",
+  ];
+
+  const youtubePhrases = [
+    "Paste a YouTube video URL here...",
+    "Found a great recipe video? Drop the link...",
+    "Enter the link to a cooking video...",
+  ];
+
+  const placeholderText = useTypewriter(
+    inputType === "text" ? textPhrases : youtubePhrases
+  );
 
   useEffect(() => {
     // Show tooltip after a short delay for effect, then hide after 30s
@@ -34,8 +55,6 @@ export function RecipeInput({ onGenerate, isLoading }: RecipeInputProps) {
       clearTimeout(hideTimer);
     };
   }, []);
-
-
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -160,7 +179,7 @@ export function RecipeInput({ onGenerate, isLoading }: RecipeInputProps) {
                   {/* TEXTAREA */}
                   {inputType === "youtube" ? (
                     <textarea
-                      placeholder="Place the YouTube url here"
+                      placeholder={placeholderText}
                       value={youtubeUrl}
                       onChange={(e) => setYoutubeUrl(e.target.value)}
                       onFocus={() => setIsFocused(true)}
@@ -170,7 +189,7 @@ export function RecipeInput({ onGenerate, isLoading }: RecipeInputProps) {
                     />
                   ) : (
                     <textarea
-                      placeholder={placeholder}
+                      placeholder={placeholderText}
                       value={recipeText}
                       onChange={(e) => {
                         const val = e.target.value;
@@ -207,10 +226,9 @@ export function RecipeInput({ onGenerate, isLoading }: RecipeInputProps) {
               </form>
 
               <div className="text-center sm:text-left pt-6 pb-2">
-
                 <p className="text-xs text-neutral-400 dark:text-neutral-500 leading-relaxed max-w-lg mx-auto sm:mx-0">
-                  Enter a dish name (e.g., "Pasta Carbonara"), or list ingredients, or paste a YouTube cooking video URL.
-
+                  Enter a dish name (e.g., "Pasta Carbonara"), or list
+                  ingredients, or paste a YouTube cooking video URL.
                 </p>
               </div>
             </div>

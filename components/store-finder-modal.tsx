@@ -145,9 +145,13 @@ export function StoreFinderModal({ isOpen, onClose }: StoreFinderModalProps) {
                       {store.name}
                     </h3>
                     <div className="flex items-center gap-2 text-sm">
-                      <span className="text-neutral-500 dark:text-neutral-400">{store.distance}</span>
-                      <span className="text-neutral-300 dark:text-neutral-600">•</span>
-                      <span className="bg-pink-100 dark:bg-pink-900/30 text-pink-600 dark:text-pink-300 px-2 py-0.5 rounded-md font-medium">
+                      <span className="text-neutral-500 dark:text-neutral-400">
+                        {store.distance}
+                      </span>
+                      <span className="text-neutral-300 dark:text-neutral-600">
+                        •
+                      </span>
+                      <span className="bg-neutral-100 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-400 px-2 py-0.5 rounded-md font-medium">
                         {store.phone}
                       </span>
                     </div>
