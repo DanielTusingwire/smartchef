@@ -10930,3 +10930,842 @@ Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
 [28:47:28.952] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
 [28:47:29.578] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
 [28:47:30.088] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[28:48:24.527] Server  WARN     ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[28:48:24.567] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:48:24.567] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:48:25.855] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:48:25.855] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:48:25.967] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:48:25.968] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:48:26.087] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[28:48:26.212] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:48:26.215] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:48:26.370] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:48:26.371] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:48:26.493] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:48:26.493] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:48:26.537] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[28:48:26.639] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:48:26.639] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:48:26.742] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:48:26.743] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:48:29.553] Browser LOG     Service Worker registered successfully: http://localhost:3000/
+[28:48:30.011] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[28:48:30.124] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[28:48:30.342] Browser LOG     Service Worker registered successfully: http://localhost:3000/
+[28:48:30.375] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[28:48:30.470] Browser LOG     Service Worker registered successfully: http://localhost:3000/
+[28:48:30.742] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[28:48:30.758] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[28:48:30.799] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[28:48:30.861] Browser LOG     Service Worker registered successfully: http://localhost:3000/
+[28:48:31.011] Browser LOG     Service Worker registered successfully: http://localhost:3000/
+[28:48:31.027] Browser LOG     Service Worker registered successfully: http://localhost:3000/
+[28:48:31.088] Browser LOG     Service Worker registered successfully: http://localhost:3000/
+[28:48:56.436] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head headCacheNode={{lazyData:null, ...}}>
+                    <__next_viewport_boundary__>
+                    <Next.Metadata>
++                     <div hidden={true}>
+-                     {"\n        "}
+                  ...
+
+[28:48:56.436] Browser LOG     Service Worker registered successfully: http://localhost:3000/
+[28:48:56.436] Browser LOG     Service Worker registered successfully: http://localhost:3000/
+[28:48:56.436] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[28:48:56.436] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[28:48:56.436] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[28:48:56.436] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[28:48:56.436] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[28:48:56.436] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[28:49:00.783] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[28:49:30.349] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[28:49:30.459] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[28:49:30.876] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[28:49:31.016] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[28:49:31.031] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[28:49:31.093] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[28:49:56.431] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[28:49:56.431] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[28:50:30.364] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[28:50:30.467] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[28:50:30.876] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[28:50:31.015] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[28:50:31.030] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[28:50:31.094] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[28:50:56.441] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[28:50:56.442] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[28:51:30.365] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[28:51:30.453] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[28:51:30.876] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[28:51:31.018] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[28:51:31.036] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[28:51:31.096] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[28:51:56.442] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[28:51:56.442] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[28:52:30.352] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[28:52:30.461] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[28:52:30.880] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[28:52:31.018] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[28:52:31.050] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[28:52:31.079] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[28:52:56.437] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[28:52:56.437] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[28:53:30.377] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[28:53:30.474] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[28:53:30.889] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[28:53:31.013] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[28:53:31.044] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[28:53:31.107] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[28:53:42.942] Server  WARN     ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[28:53:42.946] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:53:42.946] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:53:43.455] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:53:43.456] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:53:43.518] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:53:43.518] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:53:43.592] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:53:43.592] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:53:43.661] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:53:43.663] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:53:43.746] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:53:43.747] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:53:43.833] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:53:43.834] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:53:44.950] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:53:44.950] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:53:45.021] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:53:45.022] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:53:45.133] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:53:45.134] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:53:45.287] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[28:53:45.388] Server  ERROR   C:\Users\Danny\Documents\smartchef\node_modules\next\dist\server\load-manifest.external.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[28:53:45.473] Server  ERROR   C:\Users\Danny\Documents\smartchef\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[28:53:45.489] Server  ERROR   C:\Users\Danny\Documents\smartchef\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[28:53:45.496] Server  ERROR   C:\Users\Danny\Documents\smartchef\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[28:53:45.498] Server  ERROR   C:\Users\Danny\Documents\smartchef\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[28:53:45.499] Server  ERROR   C:\Users\Danny\Documents\smartchef\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[28:53:45.501] Server  ERROR   C:\Users\Danny\Documents\smartchef\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[28:53:45.502] Server  ERROR   C:\Users\Danny\Documents\smartchef\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[28:53:45.508] Server  ERROR    ⨯ SyntaxError: Unexpected end of JSON input
+[28:53:45.511] Server  ERROR   C:\Users\Danny\Documents\smartchef\node_modules\next\dist\server\load-manifest.external.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[28:53:45.513] Server  ERROR   C:\Users\Danny\Documents\smartchef\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[28:53:45.515] Server  ERROR   C:\Users\Danny\Documents\smartchef\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[28:53:45.515] Server  ERROR   C:\Users\Danny\Documents\smartchef\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[28:53:45.516] Server  ERROR   C:\Users\Danny\Documents\smartchef\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[28:53:45.517] Server  ERROR   C:\Users\Danny\Documents\smartchef\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[28:53:45.517] Server  ERROR   C:\Users\Danny\Documents\smartchef\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[28:53:45.518] Server  ERROR   C:\Users\Danny\Documents\smartchef\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[28:53:45.519] Server  ERROR    ⨯ SyntaxError: Unexpected end of JSON input
+[28:53:45.873] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head headCacheNode={{lazyData:null, ...}}>
+                    <__next_viewport_boundary__>
+                    <Next.Metadata>
++                     <div hidden={true}>
+-                     {"\n        "}
+                  ...
+
+[28:53:45.873] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[28:53:45.873] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[28:53:45.873] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[28:53:45.873] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[28:53:45.873] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[28:53:45.873] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[28:53:46.629] Server  WARN     ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[28:53:46.630] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:53:46.630] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:53:46.867] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:53:46.867] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:53:47.184] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:53:47.185] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:53:47.476] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[28:53:47.476] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[28:53:47.476] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[28:53:47.476] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[28:53:47.476] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[28:53:47.476] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[28:53:47.476] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[28:53:47.476] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[28:53:47.599] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[28:53:47.784] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[28:53:47.784] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[28:53:48.086] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[28:53:48.086] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[28:53:48.086] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[28:53:48.086] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[28:53:48.368] Browser LOG     Service Worker registered successfully: http://localhost:3000/
+[28:53:48.369] Browser LOG     Service Worker registered successfully: http://localhost:3000/
+[28:53:48.411] Browser ERROR   uncaughtError: SyntaxError: Unexpected end of JSON input
+[28:53:48.469] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:53:48.469] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:53:49.532] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[28:53:49.687] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[28:53:50.170] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:53:50.171] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:53:50.270] Browser LOG     Service Worker registered successfully: http://localhost:3000/
+[28:53:50.270] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[28:53:50.552] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[28:53:50.674] Browser LOG     Service Worker registered successfully: http://localhost:3000/
+[28:53:50.765] Browser LOG     Service Worker registered successfully: http://localhost:3000/
+[28:53:51.142] Browser LOG     Service Worker registered successfully: http://localhost:3000/
+[28:53:51.417] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[28:53:51.961] Browser LOG     Service Worker registered successfully: http://localhost:3000/
+[28:53:52.689] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[28:53:53.098] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head headCacheNode={{lazyData:null, ...}}>
+                    <__next_viewport_boundary__>
+                    <Next.Metadata>
++                     <div hidden={true}>
+-                     {"\n        "}
+                  ...
+
+[28:53:53.098] Browser LOG     Service Worker registered successfully: http://localhost:3000/
+[28:53:53.098] Browser LOG     Service Worker registered successfully: http://localhost:3000/
+[28:53:53.098] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[28:53:53.098] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[28:53:53.098] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[28:53:53.098] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[28:53:53.098] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[28:53:53.098] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[28:53:58.480] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[28:54:50.359] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[28:54:51.044] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[28:54:51.044] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[28:54:51.221] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[28:54:51.986] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[28:54:52.737] Server  WARN     ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[28:54:52.740] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:54:52.740] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:54:52.744] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:54:52.744] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:54:53.087] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:54:53.088] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:54:53.147] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:54:53.147] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:54:53.202] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:54:53.202] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:54:53.246] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:54:53.246] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:54:53.792] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:54:53.792] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:54:54.154] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:54:54.154] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:54:54.232] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:54:54.232] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:54:54.319] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:54:54.319] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:54:54.358] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[28:54:54.461] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:54:54.461] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:54:54.572] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:54:54.572] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:54:54.696] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head headCacheNode={{lazyData:null, ...}}>
+                    <__next_viewport_boundary__>
+                    <Next.Metadata>
++                     <div hidden={true}>
+-                     {"\n        "}
+                  ...
+
+[28:54:54.696] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[28:54:54.696] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[28:54:54.696] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[28:54:54.696] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[28:54:54.696] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[28:54:54.696] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[28:54:56.043] Browser LOG     Service Worker registered successfully: http://localhost:3000/
+[28:54:56.043] Browser LOG     Service Worker registered successfully: http://localhost:3000/
+[28:54:56.547] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[28:54:56.603] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[28:54:56.875] Browser LOG     Service Worker registered successfully: http://localhost:3000/
+[28:54:56.896] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[28:54:56.921] Browser LOG     Service Worker registered successfully: http://localhost:3000/
+[28:54:57.081] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[28:54:57.111] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[28:54:57.167] Browser LOG     Service Worker registered successfully: http://localhost:3000/
+[28:54:57.367] Browser LOG     Service Worker registered successfully: http://localhost:3000/
+[28:54:57.414] Browser LOG     Service Worker registered successfully: http://localhost:3000/
+[28:54:58.983] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[28:55:09.535] Server  WARN     ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[28:55:09.538] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:55:09.538] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:55:09.542] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:55:09.542] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:55:09.916] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:55:09.918] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:55:09.982] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:55:09.983] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:55:10.063] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:55:10.065] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:55:10.149] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:55:10.149] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:55:10.649] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:55:10.649] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:55:11.252] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:55:11.252] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:55:11.317] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:55:11.318] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:55:11.415] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:55:11.416] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:55:11.497] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:55:11.497] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:55:11.598] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:55:11.598] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:55:11.757] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[28:55:12.769] Browser LOG     Service Worker registered successfully: http://localhost:3000/
+[28:55:13.440] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[28:55:13.585] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[28:55:13.796] Browser LOG     Service Worker registered successfully: http://localhost:3000/
+[28:55:13.822] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[28:55:13.843] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[28:55:13.921] Browser LOG     Service Worker registered successfully: http://localhost:3000/
+[28:55:14.101] Browser LOG     Service Worker registered successfully: http://localhost:3000/
+[28:55:14.101] Browser LOG     Service Worker registered successfully: http://localhost:3000/
+[28:55:14.105] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[28:55:14.313] Browser LOG     Service Worker registered successfully: http://localhost:3000/
+[28:55:24.223] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:55:24.223] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:55:25.593] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[28:55:25.946] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <RootLayout>
+                        <html lang="en" suppressHydrationWarning={true}>
+                          <head>
+                          <body
++                           className="font-sans antialiased"
+-                           className="font-sans antialiased antigravity-scroll-lock"
+                          >
+                  ...
+
+[28:55:25.946] Browser LOG     Service Worker registered successfully: http://localhost:3000/
+[28:56:14.976] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head headCacheNode={{lazyData:null, ...}}>
+                    <__next_viewport_boundary__>
+                    <Next.Metadata>
++                     <div hidden={true}>
+-                     {"\n        "}
+                  ...
+
+[28:56:14.976] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[28:56:14.976] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[28:56:14.976] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[28:56:14.976] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[28:56:14.976] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[28:56:14.976] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[28:56:14.989] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[28:56:15.001] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[28:56:15.008] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[28:56:15.014] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[28:56:15.020] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[28:56:16.766] Browser LOG     Service Worker registered successfully: http://localhost:3000/
+[28:56:16.766] Browser LOG     Service Worker registered successfully: http://localhost:3000/
+[28:56:17.786] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[28:56:25.949] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[28:57:13.812] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[28:57:13.952] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[28:57:14.106] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[28:57:14.106] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[28:57:14.320] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[28:57:16.793] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[28:57:16.793] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[28:57:25.951] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[28:58:05.513] Server  WARN     ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[28:58:05.518] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /_not-found. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:58:05.518] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /_not-found. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:58:05.519] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /_not-found. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:58:05.519] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /_not-found. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:58:13.816] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[28:58:13.942] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[28:58:14.112] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[28:58:14.112] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[28:58:14.308] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[28:58:16.783] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[28:58:16.783] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[28:58:25.964] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[28:58:42.757] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /_not-found. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:58:42.758] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /_not-found. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:58:42.758] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /_not-found. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:58:42.758] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /_not-found. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[28:59:13.810] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[28:59:13.935] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[28:59:14.105] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[28:59:14.120] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[28:59:14.322] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[28:59:16.783] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[28:59:16.783] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[28:59:25.954] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[29:00:04.347] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[29:00:04.401] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[29:00:04.401] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[29:00:05.731] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[29:00:05.732] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[29:00:05.818] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[29:00:05.818] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[29:00:05.966] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[29:00:05.966] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[29:00:06.002] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[29:00:06.045] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[29:00:06.045] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[29:00:06.122] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[29:00:06.123] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[29:00:06.229] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[29:00:06.229] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[29:00:06.360] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[29:00:06.360] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[29:00:06.412] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head headCacheNode={{lazyData:null, ...}}>
+                    <__next_viewport_boundary__>
+                    <Next.Metadata>
++                     <div hidden={true}>
+-                     {"\n        "}
+                  ...
+
+[29:00:06.412] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[29:00:06.412] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[29:00:06.412] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[29:00:06.412] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[29:00:06.412] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[29:00:06.412] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[29:00:07.535] Browser LOG     Service Worker registered successfully: http://localhost:3000/
+[29:00:07.535] Browser LOG     Service Worker registered successfully: http://localhost:3000/
+[29:00:08.125] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[29:00:08.205] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[29:00:08.263] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[29:00:08.358] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[29:00:08.390] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[29:00:08.413] Browser LOG     Service Worker registered successfully: http://localhost:3000/
+[29:00:08.439] Browser LOG     Service Worker registered successfully: http://localhost:3000/
+[29:00:08.475] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[29:00:08.560] Browser LOG     Service Worker registered successfully: http://localhost:3000/
+[29:00:08.670] Browser LOG     Service Worker registered successfully: http://localhost:3000/
+[29:00:08.684] Browser LOG     Service Worker registered successfully: http://localhost:3000/
+[29:00:08.731] Browser LOG     Service Worker registered successfully: http://localhost:3000/
+[29:00:12.309] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[29:01:07.544] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[29:01:07.544] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[29:01:08.434] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[29:01:08.450] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[29:01:08.558] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[29:01:08.681] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[29:01:08.682] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[29:01:08.741] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[29:02:07.538] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[29:02:07.538] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[29:02:08.422] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[29:02:08.438] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[29:02:08.561] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[29:02:08.685] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[29:02:08.685] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[29:02:08.748] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[29:02:24.960] Server  WARN     ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[29:02:24.965] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[29:02:24.965] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[29:02:24.969] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[29:02:24.969] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[29:02:25.320] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[29:02:25.320] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[29:02:25.393] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[29:02:25.393] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[29:02:25.453] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[29:02:25.454] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[29:02:25.534] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[29:02:25.534] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[29:02:25.589] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[29:02:25.590] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[29:02:26.686] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[29:02:26.686] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[29:02:26.753] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[29:02:26.753] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[29:02:26.849] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[29:02:26.849] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[29:02:26.880] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[29:02:26.952] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[29:02:26.952] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[29:02:27.013] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[29:02:27.013] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[29:02:27.097] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[29:02:27.097] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[29:02:27.206] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[29:02:27.206] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[29:02:27.438] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head headCacheNode={{lazyData:null, ...}}>
+                    <__next_viewport_boundary__>
+                    <Next.Metadata>
++                     <div hidden={true}>
+-                     {"\n        "}
+                  ...
+
+[29:02:27.438] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[29:02:27.438] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[29:02:27.438] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[29:02:27.438] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[29:02:27.438] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[29:02:27.438] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[29:02:28.686] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[29:02:29.341] Browser LOG     Service Worker registered successfully: http://localhost:3000/
+[29:02:29.341] Browser LOG     Service Worker registered successfully: http://localhost:3000/
+[29:02:29.346] Browser LOG     Service Worker registered successfully: http://localhost:3000/
+[29:02:29.875] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[29:02:30.109] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[29:02:30.122] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[29:02:30.166] Browser LOG     Service Worker registered successfully: http://localhost:3000/
+[29:02:30.198] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[29:02:30.228] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[29:02:30.400] Browser LOG     Service Worker registered successfully: http://localhost:3000/
+[29:02:30.413] Browser LOG     Service Worker registered successfully: http://localhost:3000/
+[29:02:30.447] Browser LOG     Service Worker registered successfully: http://localhost:3000/
+[29:02:30.478] Browser LOG     Service Worker registered successfully: http://localhost:3000/
+[29:02:32.998] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[29:03:29.345] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[29:03:29.351] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[29:03:29.352] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[29:03:30.158] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[29:03:30.405] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[29:03:30.421] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[29:03:30.452] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[29:03:30.483] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[29:04:29.354] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[29:04:29.354] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[29:04:29.354] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[29:04:30.164] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[29:04:30.413] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[29:04:30.429] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[29:04:30.460] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[29:04:30.491] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[29:05:29.344] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[29:05:29.344] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[29:05:29.344] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[29:05:30.154] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[29:05:30.411] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[29:05:30.418] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[29:05:30.452] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[29:05:30.496] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[29:05:33.459] Server  WARN     ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[29:05:33.468] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /_not-found. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[29:05:33.468] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /_not-found. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[29:05:33.469] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /_not-found. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[29:05:33.470] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /_not-found. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[29:06:29.336] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[29:06:29.352] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[29:06:29.352] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[29:06:30.163] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[29:06:30.410] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[29:06:30.426] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[29:06:30.456] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
+[29:06:30.488] Browser ERROR   unhandledRejection: InvalidStateError: Failed to update a ServiceWorker for scope ('http://localhost:3000/') with script ('Unknown'): The object is in an invalid state.
