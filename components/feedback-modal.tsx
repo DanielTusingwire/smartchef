@@ -74,7 +74,7 @@ export function FeedbackModal({ isOpen, onClose }: FeedbackModalProps) {
           // Feedback Form
           <>
             <div className="text-center space-y-1 sm:space-y-2 mb-6 sm:mb-8">
-              <h2 className="text-xl sm:text-2xl font-bold text-neutral-900 dark:text-neutral-100">Enjoying Chef?</h2>
+              <h2 className="text-xl sm:text-2xl font-bold text-neutral-900 dark:text-neutral-100">Enjoying OChef?</h2>
               <p className="text-neutral-500 dark:text-neutral-400 text-xs sm:text-sm px-2 sm:px-4">
                 Your feedback will help us improve to give you a better experience in future
               </p>

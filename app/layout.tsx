@@ -13,10 +13,9 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "JikoniGPT - AI Recipe Assistant",
-  description:
-    "Convert YouTube cooking videos and unstructured recipes into clean, structured recipe cards with voice-controlled cooking guidance",
-  applicationName: "JikoniGPT",
+  title: "OChef - Your Smart Kitchen Companion",
+  description: "Cook Smarter. Live Better with OChef.",
+  applicationName: "OChef",
   generator: "Next.js",
   keywords: [
     "recipe",
@@ -60,7 +59,7 @@ export const metadata: Metadata = {
   appleWebApp: {
     capable: true,
     statusBarStyle: "black-translucent",
-    title: "JikoniGPT",
+    title: "OChef",
   },
   openGraph: {
     type: "website",

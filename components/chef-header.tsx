@@ -17,11 +17,11 @@ export function ChefHeader({ onBack }: ChefHeaderProps) {
             >
               ←
             </button>
-            <h1 className="text-2xl font-bold text-primary">JikoniGPT</h1>
+            <h1 className="text-2xl font-bold text-primary">OChef</h1>
             <div className="w-6" />
           </>
         ) : (
-          <h1 className="text-2xl font-bold text-primary w-full">JikoniGPT</h1>
+          <h1 className="text-2xl font-bold text-primary w-full">OChef</h1>
         )}
       </div>
     </header>

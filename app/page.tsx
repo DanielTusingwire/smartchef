@@ -28,7 +28,7 @@ export default function HomePage() {
       return "It seems you're offline. Please check your internet connection.";
     }
     if (message.includes("GEMINI_API_KEY")) {
-      return "The chef is missing their secret ingredient (API Key). Please check the server configuration.";
+      return "OChef is missing their secret ingredient (API Key). Please check the server configuration.";
     }
     if (message.includes("Invalid YouTube")) {
       return "That video URL doesn't look quite right. Please try a different one.";

@@ -69,8 +69,8 @@ export function LoadingModal({
         <div className="space-y-2">
           <p className="text-xl font-bold text-neutral-900 dark:text-neutral-100">
             {inputType === "youtube"
-              ? "JikoniGPT is watching the video..."
-              : "JikoniGPT is generating recipe..."}
+              ? "OChef is watching the video..."
+              : "OChef is generating recipe..."}
           </p>
           <p className="text-sm text-neutral-500 dark:text-neutral-400">
             Estimated time: 15 to 25 seconds

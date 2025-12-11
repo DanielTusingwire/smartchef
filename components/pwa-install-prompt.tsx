@@ -179,7 +179,7 @@ export function PWAInstallPrompt() {
             >
               <div className="flex items-center justify-between mb-6">
                 <h2 className="text-2xl font-bold text-neutral-900 dark:text-neutral-100">
-                  Install JikoniGPT
+                  Install OChef
                 </h2>
                 <button
                   onClick={() => setShowIOSInstructions(false)}
@@ -228,7 +228,7 @@ export function PWAInstallPrompt() {
                       Tap "Add"
                     </p>
                     <p className="text-sm text-neutral-600 dark:text-neutral-400">
-                      Confirm to add JikoniGPT to your home screen
+                      Confirm to add OChef to your home screen
                     </p>
                   </div>
                 </div>

@@ -6,7 +6,7 @@ import Lottie from "lottie-react";
 import chefAnimation from "../public/chef.json";
 
 export function AppLoader() {
-  const fullText = "Preparing your kitchen...";
+  const fullText = "Cook Smarter. Live Better.";
   const [displayedText, setDisplayedText] = useState("");
   const [isLoading, setIsLoading] = useState(true);
 
@@ -41,7 +41,6 @@ export function AppLoader() {
           className="fixed inset-0 z-[200] bg-neutral-100 flex items-center justify-center"
         >
           <div className="text-center">
-
             {/* Lottie Animation */}
             <div className="w-40 h-40 sm:w-56 sm:h-56 mx-auto mb-2">
               <Lottie animationData={chefAnimation} loop={true} />

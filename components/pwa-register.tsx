@@ -35,7 +35,7 @@ export function PWARegister() {
                   // Optionally show update notification
                   // Optionally show update notification
                   toast("New version available!", {
-                    description: "A new version of JikoniGPT is ready.",
+                    description: "A new version of OChef is ready.",
                     action: {
                       label: "Update",
                       onClick: () => {

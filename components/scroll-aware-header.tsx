@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 interface ScrollAwareHeaderProps {
   rightContent?: React.ReactNode;
@@ -44,8 +45,15 @@ export function ScrollAwareHeader({
       <div
         className={cn("mx-auto flex items-center justify-between", maxWidth)}
       >
-        <span className="text-xl font-bold tracking-tight text-neutral-900 dark:text-neutral-100">
-          JikoniGPT
+        <span className="font-bold tracking-tight">
+          <Image
+            src="/ocheflogo.png"
+            alt="OChef"
+            width={100}
+            height={32}
+            className="h-8 w-auto object-contain"
+            priority
+          />
         </span>
         {rightContent}
       </div>
