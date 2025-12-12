@@ -181,7 +181,7 @@ export function RecipeInput({
                 </h1>
               ) : (
                 <h2 className="text-2xl sm:text-2xl md:text-3xl font-semibold text-neutral-900 dark:text-neutral-300 tracking-tight animate-in fade-in slide-in-from-bottom-2 duration-500">
-                  What are you craving?
+                  Cook smarter with OneChef
                 </h2>
               )}
             </div>
